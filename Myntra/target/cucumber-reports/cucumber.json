@@ -1,0 +1,97 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-01T12:29:35.960Z",
+        "before": [
+          {
+            "result": {
+              "duration": 19918699400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.LoginIntit()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Successful login with Valid Credentials",
+        "description": "",
+        "id": "login-on-myntra-app;successful-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1136955200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 108704600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Myntra Home Page",
+            "match": {
+              "location": "Login.user_is_on_Myntra_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13392701600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks the Login button and enters \"Rashikas331@gmail.com\" and \"Demo@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rashikas331@gmail.com",
+                  "offset": 41
+                },
+                {
+                  "val": "Demo@123",
+                  "offset": 69
+                }
+              ],
+              "location": "Login.user_clicks_the_Login_button_and_enters_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7833758200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Should be able to login",
+            "match": {
+              "location": "Login.user_Should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login on Myntra App",
+    "description": "",
+    "id": "login-on-myntra-app",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
